@@ -1,0 +1,25 @@
+/* CSS Demo Stylesheet */
+
+
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+/* -----------------Global Styles----------------- */
+
+body{
+    background-color: black;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+
+header.primary{
+
+}

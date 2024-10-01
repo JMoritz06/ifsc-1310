@@ -15,11 +15,54 @@ html {
 /* -----------------Global Styles----------------- */
 
 body{
-    background-color: black;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Libre Baskerville", serif;
+    margin: 0;
+}
+
+header.primary {
+  background-color: #2A8C82;
+  padding: 40px;
+  text-align: center;
+}
+
+header.primary h1{
+  font-size: 3rem;
+}
+
+header.primary h1 a{
+
+  text-decoration: none;
+}
+
+header.primary h2 {
+  margin:0;
+}
+
+nav.primary{
 
 }
 
-header.primary{
+nav.primary ul{
+  padding: 15px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
+nav.primary ul li{
+  list-style-type: none;
+  
+}
+
+nav.primary ul li a{
+  color: turquoise;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0, .5);
+}
+
+nav.primary ul li a:hover{
+  background-color: rgba(0,0,0, .8);
 }

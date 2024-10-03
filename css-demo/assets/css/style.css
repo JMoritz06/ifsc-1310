@@ -1,7 +1,7 @@
 /* CSS Demo Stylesheet */
 
 
-/*  ---------------Box Sizing-----------------  */
+/* ----------------Box Sizing-----------------  */
 
 html {
     box-sizing: border-box;
@@ -11,6 +11,21 @@ html {
   *:after {
     box-sizing: inherit;
   }
+
+/* -----------------Responsive Images----------------- */  
+img{
+  max-width:100px;
+}
+
+/* -----------------Utility----------------- */
+
+.container{
+  width: 80vw;
+  margin: 40px auto;
+  max-width: 960px;
+}
+
+
 
 /* -----------------Global Styles----------------- */
 
@@ -39,7 +54,8 @@ header.primary h2 {
 }
 
 nav.primary{
-
+  max-width: 960px;
+  margin: auto;
 }
 
 nav.primary ul{
@@ -61,8 +77,56 @@ nav.primary ul li a{
   padding: 5px 10px;
   border-radius: 10px;
   background-color: rgba(0,0,0, .5);
+  transition: .3s;
 }
 
 nav.primary ul li a:hover{
   background-color: rgba(0,0,0, .8);
+}
+
+#intro{
+  line-height: 1.6;
+}
+
+#intro h2{
+  border-bottom: 1px dotted black;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+
+#content article.post{
+  box-shadow: 0 4px 8px rgba(0,0,0, .5);
+  padding:10px;
+  border-radius:4px;
+  font-size:.8rem;
+}
+
+time.post-date, figcaption{
+  text-transform:uppercase;
+}
+
+#content article.post figure{
+  margin:0;
+}
+
+
+/* -----------------Media Queries----------------- */
+
+@media screen and (max-width:600px){
+  nav.primary ul{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 250px;
+    margin: auto;
+  }
+
+
+  nav.primary ul a{
+    display: block;
+  }
+
 }

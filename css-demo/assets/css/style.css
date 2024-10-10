@@ -17,7 +17,7 @@ img{
   max-width:100%;
 }
 
-/* -----------------Utility----------------- */
+/* -----------------Utility Classes----------------- */
 
 .container{
   width: 80vw;
@@ -25,7 +25,26 @@ img{
   max-width: 960px;
 }
 
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
 
+.img-left {
+  float: left;
+  margin: 10px 20px 10px 0;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.img-center{
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
 
 /* -----------------Global Styles----------------- */
 
@@ -125,15 +144,69 @@ time.post-date, figcaption{
   
 }
 
+#practice h2{
+  border-bottom: 1px dotted ;
+}
+
+#practice a{
+  color: turquoise;
+}
+
+#practice a:hover{
+  text-decoration: none;
+}
+
+#practice h3{
+  border-left: 6.5px solid #2A8C82;
+  padding-left: 5px;
+}
+
+table{
+  width: 50%;
+  border: 1px solid black;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+caption{
+  font-weight: bold;
+  margin: 10px;
+  border-bottom: 1px dotted;
+  
+}
+
+tr:nth-child(){
+  
+}
+
+tr:hover{
+  background-color: rgba(0,0,0, .5);
+}
+
+th{
+  background-color: black;
+  color: #ccc;
+  padding: 7.5px;
+}
+
+td{
+  border: 1px solid black;
+  padding: 4px;
+
+}
+td:nth-child(n+2){
+  text-align: right;
+}
+
 aside[role="complementary"]{
   background-color: #598F89;
-  coler:#fff;
+  color:#fff;
   padding:40px 0;
 }
 
 aside .container{
   display: flex;
-  flex-direction: rox;
+  flex-direction: row;
   justify-content: space-around;
   gap:60px;
 }

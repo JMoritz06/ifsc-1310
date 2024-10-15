@@ -198,6 +198,42 @@ td:nth-child(n+2){
   text-align: right;
 }
 
+#practice ol{
+  list-style-type:lower-roman
+}
+
+#practice ul{
+  list-style-type: square;
+}
+
+#practice ul ul{
+  list-style-type:disc;
+}
+
+#practice dt{
+  font-weight: bold;
+}
+
+#practice dd{
+  margin: 0;
+}
+
+dd + dt{
+  margin-top: 20px;
+}
+
+#practice blockquote{
+  border: 2px double;
+  padding: 20px 40px;
+  
+}
+
+#practice cite{
+  display: block;
+  text-align: right;
+  font-size: smaller;
+}
+
 aside[role="complementary"]{
   background-color: #598F89;
   color:#fff;

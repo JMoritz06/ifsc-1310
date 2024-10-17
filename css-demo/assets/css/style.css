@@ -46,13 +46,13 @@ img{
   padding: 5px;
 }
 
-/* -----------------Global Styles----------------- */
+/* -----------------Global Styles-----------------  */
 
 body{
     font-family: "Libre Baskerville", serif;
     margin: 0;
     color: #fff;
-    background-color: black;
+    background-color: #36454F;
 }
 
 header.primary {
@@ -148,7 +148,7 @@ time.post-date, figcaption{
 }
 
 #practice h2{
-  border-bottom: 1px dotted ;
+  border-bottom: 1px solid;
 }
 
 #practice a{
@@ -166,7 +166,7 @@ time.post-date, figcaption{
 
 table{
   width: 50%;
-  border: 1px solid black;
+  border: 1px solid white;
   margin: 20px 0;
   border-collapse: collapse;
 }
@@ -175,10 +175,6 @@ caption{
   font-weight: bold;
   margin: 10px;
   border-bottom: 1px dotted;
-  
-}
-
-tr:nth-child(){
   
 }
 
@@ -226,9 +222,9 @@ dd + dt{
 }
 
 #practice blockquote{
-  border: 2px double;
+  border: 10px double;
   padding: 20px 40px;
-  
+  border-radius: 5px;
 }
 
 #practice cite{

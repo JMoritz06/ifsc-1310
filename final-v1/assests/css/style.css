@@ -1,9 +1,37 @@
 
 /* ----------------Box Sizing-----------------  */
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /* -----------------Responsive Images----------------- */  
 
+img{
+  max-width:100%;
+}
+
 /* -----------------Utility Classes----------------- */
+
+.container {
+  position:static
+  
+}
+
+.img-left {
+ float: left;
+ border-radius: 2;
+ 
+}
+.img-right {
+  float: right;
+  
+}
 
 /* -----------------Global Styles-----------------  */
 
@@ -17,8 +45,7 @@
     padding: 20px;
     margin-left: 300px;
     margin-right: 300px;
-    
-    
+
     
   }
 
@@ -50,11 +77,36 @@
     background-color: rgba(0,0,0, .8);
   }
 
-  body {
+  body.index {
     font-family: "encode sans";
     background-image: url(../img/background-1.webp);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  body.story {
+    font-family: "encode sans";
+    background-image: url(../img/background-2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  body.creatures {
+    font-family: "encode sans";
+    background-image: url(../img/background-3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  body.vehicles {
+    font-family: "encode sans";
+    background-image: url(../img/background-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   body h1{
@@ -68,15 +120,32 @@
   #content {
     color: white;
     background: rgba(0,0,0, .5);
+    
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    max-height: fit-content;
+    overflow: hidden;
+    margin-bottom: 50px;
+    
   }
   
 
   footer{
-    position: absolute;
+    background: rgba(0,0,0, .5);
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 800px;
+    padding: 5px 0 5px 0;
+    /*position: absolute;
     bottom: 0;
-    left: 600px;
+    left: 50%;
+    margin-left: -125px;
+    padding: 0 20px 0 20px; */
+  
+    
     
   }
 /* -----------------Media Queries----------------- */

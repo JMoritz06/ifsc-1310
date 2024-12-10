@@ -83,6 +83,7 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    text-align: center;
   }
 
   body.story {
@@ -111,6 +112,7 @@ img{
 
   body h1{
     text-align: center;
+
   }
 
   #intro{
@@ -139,7 +141,7 @@ img{
     border: 1px solid black;
     position: relative;
     padding: 5px 0 5px 0;
-    
+  
   }
 
   footer a{
